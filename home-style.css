@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,400;1,300&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+#logo{
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #0a243c;
+	color: #f7f7f7;
+}
+#logo h1{
+	font-family: 'Indie Flower', cursive;
+}
+.logo-clr{
+	color: #B72255;
+}
+.flex{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.nav-bar{
+	background-color: #0b2b47;
+}
+.btn-menu{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #B72255;
+	border-radius: 6px;
+	display: none;
+}
+.btn-menu button{
+	width: 100%;
+	height: 100%;
+	color: #f7f7f7; 
+	border: 0;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+.menu-nav ul{
+	display: flex;
+}
+.menu-nav li{
+	list-style-type: none;
+}
+.menu-nav a{
+	text-decoration: none;
+	padding: 10px;
+	margin: 0 5px;
+	color: #f7f7f7;
+}
+.menu-nav a:hover{
+	border-bottom: 1px solid;
+	border-bottom-color: #B72255;
+	color: #B72255;
+	font-size: 21px;
+}
+
+/*-----------------section 1----------------------*/
+.flex1{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.home-img{
+	flex: 60%;
+}
+.anim1{
+	flex: 40%;
+}
+.info{
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+}
+img{
+	width: 100%;
+}
+section{
+	margin: 8px 0;
+}
+.info h1{
+	font-size: 40px;
+}
+#titre1,
+#titre2,
+#titre3{
+	position: absolute;
+	padding: 12px;
+	left: -550px;
+}
+#titre1{
+	top: 10%;
+}
+#titre2{
+	top: 30%;
+}
+#titre3{
+	top: 60%;
+}
+#titre4{
+	position: absolute;
+	top: 70%;
+	left: 100%;
+	color: #B72255;
+}
+.mobile{
+	position: absolute;
+	z-index: 999;
+	background-color: #0a243c;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	
+}
+.mobile ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	list-style-type: none;
+}
+.mobile li{
+	line-height: 100px;
+}
+.mobile a{
+	text-decoration: none;
+	color: #f7f7f7;
+	font-size: 2rem;
+	margin: 10px 0;
+}
+.btn-hide{
+	width: 45px;
+	height: 45px;
+	border: 1px solid #B72255;
+	border-radius: 6px;
+	float: right;
+	margin: 20px;
+}
+.btn-hide button{
+	width: 100%;
+	height: 100%;
+	color: #f7f7f7; 
+	border: 0;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+.media ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+.media li{
+	margin: 20px 0;
+	width: 65px;
+	height: 65px;
+	text-align: center;
+}
+.media a{
+	color: #f7f7f7;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding-top: 25%;
+	border: 1px solid #800040;
+	border-radius: 6px;
+}
+.media a:hover{
+	color: #800040;
+	background-color: #f7f7f7;
+
+}
+.information{
+	display: flex;
+	justify-content: space-between;
+}
+.contact{
+	border: 1px solid black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #0b2b47;
+	border: 1px solid #0b2b47;
+}
+.contact, .media{
+	flex: 50%;
+	padding: 20px;
+}
+.auth{
+	width: 100%;
+	position: relative;
+	margin: 10px 0;
+}
+.cont-icon{
+	position: absolute;
+	display: inline-block;
+	border: 1px solid #B72255;
+	background-color: #B72255;
+	color: #f7f7f7;
+	height: 100%;
+	width: 8%;
+	text-align: center;
+}
+.cont-icon i{
+	padding-top: 12px;
+}
+input[type=text], input[type=email]{
+	width: 70%;
+	padding: 15px;
+	text-align: center;
+}
+#btn-envoie{
+	color: #f7f7f7;
+	background-color: #B72255;
+	border: 0;
+	outline: none;
+	padding: 15px;
+	font-size: 18px;
+	border-radius: 6px;
+	width: 150px;
+}
+@media screen and (max-width: 576px){
+	.flex1{
+		flex-direction: column;
+	}
+	.info{
+		position: static;
+		width: 100%;
+	}
+	.home-img, .anim1{
+		width: 100%;
+		flex: 100%;
+	}
+	#titre1{
+	    top: 15%;
+    }
+    #titre2{
+    	top: 25%;
+    }
+    #titre3{
+    	top: 45%;
+    }
+    #titre4{
+    	top: 45%;
+    }
+    #titre1 h1, #titre2 h1{
+    	font-size: 30px;
+    }
+	.menu-nav{
+		display: none;
+	}
+	.btn-menu{
+		display: block;
+	}
+	.information{
+		flex-direction: column;
+	}
+	.media, .contact{
+		flex: 100%;
+	}
+	.contact{
+		order: 1;
+	}
+	.media{
+		order: 2;
+	}
+	.media ul{
+		flex-direction: row;
+		margin: 0 8px;
+	}
+	.media li{
+		margin: 0 8px;
+		text-align: center;
+	}
+	textarea, input[type=text], input[type=email]{
+		width: 100%;
+	}
+	.cont-icon{
+		width: 18%;
+	}
+}
